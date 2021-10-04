@@ -1,10 +1,10 @@
 import './topbar.css';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
-import { FaPinterestP } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { FaStackOverflow } from 'react-icons/fa';
 import { FaSearch } from 'react-icons/fa';
-import image from '../images/image-1.jpg';
+import image from '../images/image-1.jpeg';
 
 const TopBar = () => {
   return (
@@ -12,8 +12,8 @@ const TopBar = () => {
       <div className='topLeft'>
         <FaFacebookSquare className='topIcon' />
         <FaTwitter className='topIcon' />
-        <FaPinterestP className='topIcon' />
-        <FaInstagram className='topIcon' />
+        <FaLinkedinIn className='topIcon' />
+        <FaStackOverflow className='topIcon' />
       </div>
       <div className='topCenter'>
         <ul className='topList'>
