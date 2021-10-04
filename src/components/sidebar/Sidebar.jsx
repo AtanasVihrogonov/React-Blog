@@ -1,5 +1,5 @@
 import sidebar from './sidebar.css';
-import image from '../images/image-1.jpeg';
+import image from '../../images/image-1.jpeg';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';

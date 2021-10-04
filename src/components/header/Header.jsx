@@ -1,6 +1,6 @@
 import './header.css';
 // import image from '../images/image-4.jpg';
-import Video from '../videos/video-1.mp4';
+import Video from '../../videos/video-1.mp4';
 
 const Header = () => {
   return (

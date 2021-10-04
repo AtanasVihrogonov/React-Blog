@@ -4,7 +4,7 @@ import { FaTwitter } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaStackOverflow } from 'react-icons/fa';
 import { FaSearch } from 'react-icons/fa';
-import image from '../images/image-1.jpeg';
+import image from '../../images/image-1.jpeg';
 
 const TopBar = () => {
   return (
