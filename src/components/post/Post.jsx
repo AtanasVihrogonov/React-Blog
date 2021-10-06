@@ -8,8 +8,8 @@ const Post = () => {
 
       <div className='postInfo'>
         <div className='postCats'>
-          <span className='postCat'>React</span>
-          <span className='postCat'>Node</span>
+          <span className='postCat'> React /</span>
+          <span className='postCat'> Node</span>
         </div>
         <span className='postTitle'>
           Lorem ipsum, dolor sit amet consec.

@@ -1,32 +1,100 @@
 import './topbar.css';
-import { FaFacebookSquare } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaStackOverflow } from 'react-icons/fa';
 import { FaSearch } from 'react-icons/fa';
 import image from '../../images/image-1-removebg.jpg';
+import { Link } from 'react-router-dom';
+import React from 'react';
 
 const TopBar = () => {
+  const user = false;
   return (
     <div className='top'>
-      <div className='topLeft'>
-        <FaFacebookSquare className='topIcon' />
-        <FaTwitter className='topIcon' />
-        <FaLinkedinIn className='topIcon' />
-        <FaStackOverflow className='topIcon' />
-      </div>
-      <div className='topCenter'>
-        <ul className='topList'>
-          <li className='topListItem'>Home</li>
-          <li className='topListItem'>About</li>
-          <li className='topListItem'>Contact</li>
-          <li className='topListItem'>Write</li>
-          <li className='topListItem'>Logout</li>
-        </ul>
-      </div>
-      <div className='topRight'>
-        <img className='topImg' src={image} alt='' />
-        <FaSearch className='topSearchIcon' />
+      <div className='topContainer'>
+        <div className='topLeft'>
+          <FaGithub
+            className='topIcon'
+            onClick={() =>
+              window.open(
+                'https://github.com/AtanasVihrogonov://www.facebook.com',
+                '_blank'
+              )
+            }
+          />
+          <FaTwitter
+            className='topIcon'
+            onClick={() =>
+              window.open(
+                'https://https://twitter.com/TheAV_001.google.com',
+                '_blank'
+              )
+            }
+          />
+          <FaLinkedinIn
+            className='topIcon'
+            onClick={() =>
+              window.open(
+                'https://https://www.linkedin.com/in/atanasvihrogonov/.google.com',
+                '_blank'
+              )
+            }
+          />
+          <FaStackOverflow
+            className='topIcon'
+            onClick={() =>
+              window.open(
+                'https://stackoverflow.com/users/8870964/atanas-vihrogonov',
+                '_blank'
+              )
+            }
+          />
+        </div>
+        <div className='topCenter'>
+          <ul className='topList'>
+            <li className='topListItem'>
+              <Link className='link' to='/'>
+                Home
+              </Link>
+            </li>
+            <li className='topListItem'>
+              <Link className='link' to='/about'>
+                About
+              </Link>
+            </li>
+            <li className='topListItem'>
+              <Link className='link' to='/projects'>
+                Projects
+              </Link>
+            </li>
+            <li className='topListItem'>
+              <Link className='link' to='/write'>
+                Write
+              </Link>
+            </li>
+            <li className='topListItem'>{user && 'Logout'}</li>
+          </ul>
+        </div>
+        <div className='topRight'>
+          {user ? (
+            <img className='topImg' src={image} alt='' />
+          ) : (
+            <ul className='topList'>
+              <li className='topListItem'>
+                <Link className='link' to='/login'>
+                  Login
+                </Link>
+              </li>
+              <li className='topListItem'>
+                <Link className='link' to='/register'>
+                  Register
+                </Link>
+              </li>
+            </ul>
+          )}
+          <FaSearch className='topSearchIcon' />
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,20 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+}
+
+.about img {
+  width: 500px;
+  object-fit: cover;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
