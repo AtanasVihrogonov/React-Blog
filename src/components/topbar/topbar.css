@@ -36,9 +36,7 @@
   color: #444;
 }
 
-.topCenter {
-  flex: 6;
-}
+.topCenter { flex: 6; }
 
 .topImg {
   width: 40px;
@@ -54,7 +52,6 @@
   padding: 0;
   list-style: none;
   letter-spacing: 1px;
-  /* text-transform: uppercase; */
 }
 
 .topListItem {
@@ -63,9 +60,7 @@
   font-weight: 300;
   cursor: pointer;
 }
-.topListItem > Link {
-  text-decoration: none;
-}
+.topListItem > Link { text-decoration: none; }
 
 .topSearchIcon {
   font-style: 18px;

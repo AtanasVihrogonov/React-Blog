@@ -22,18 +22,14 @@
   color: #fff;
 }
 
-.loginForm > label {
-  margin: 10px 0;
-}
+.loginForm > label { margin: 10px 0; }
 
 .loginInput {
   padding: 10px;
   background-color: #fff;
   border: none;
 }
-.loginInput:focus {
-  outline-color: teal;
-}
+.loginInput:focus { outline-color: teal; }
 
 .loginButton {
   margin-top: 20px;
@@ -45,7 +41,6 @@
   letter-spacing: 1px;
 }
 
-
 .loginButton:hover {
   filter: brightness(90%);
   transform: scale(1.05);
@@ -56,11 +51,11 @@
   top: 80px;
   right: 20px;
   background-color: teal;
+  color: #fff;
   cursor: pointer;
   border: none;
   border-radius: 10px;
   padding: 10px 30px;
-  color: #fff;
   letter-spacing: 1px;
 }
 

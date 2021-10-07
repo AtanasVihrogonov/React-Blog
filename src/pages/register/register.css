@@ -22,18 +22,14 @@
   color: #fff;
 }
 
-.registerForm > label {
-  margin: 10px 0;
-}
+.registerForm > label { margin: 10px 0; }
 
 .registerInput {
   padding: 10px;
   background-color: #fff;
   border: none;
 }
-.registerInput:focus {
-  outline-color: teal;
-}
+.registerInput:focus { outline-color: teal; }
 
 .registerButton {
   margin-top: 20px;
@@ -55,11 +51,11 @@
   top: 80px;
   right: 20px;
   background-color: teal;
+  color: #fff;
   cursor: pointer;
   border: none;
   border-radius: 10px;
   padding: 10px 30px;
-  color: #fff;
   letter-spacing: 1px;
 }
 

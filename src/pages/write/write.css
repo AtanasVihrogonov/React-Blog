@@ -1,6 +1,4 @@
-.write {
-  padding-top: 50px;
-}
+.write { padding-top: 50px; }
 
 .writeImg {
   margin-left: 150px;
@@ -10,9 +8,7 @@
   border-radius: 10px;
 }
 
-.writeForm {
-  position: relative;
-}
+.writeForm { position: relative; }
 
 .writeFormGroup {
   margin-left: 150px;
@@ -37,9 +33,7 @@
   width: 70vw;
 }
 
-.writeInput:focus {
-  outline: none;
-}
+.writeInput:focus { outline: none; }
 
 .writeText {
   font-size: 20px;

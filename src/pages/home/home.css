@@ -11,8 +11,7 @@
   margin-top: 30px;
 }
 
+/* ========== Media Query ========== */
 @media screen and (max-width: 768px) {
-  .homeContainer {
-    flex-direction: column-reverse;
-  }
+  .homeContainer { flex-direction: column-reverse; }
 }

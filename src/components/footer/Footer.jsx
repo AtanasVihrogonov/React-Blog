@@ -14,7 +14,7 @@ const Footer = () => {
             <div className='footerLinkItems'>
               <p>About me</p>
               <p>Looking for an experienced junior developer to build your <br></br>web app or ship your software product? I'm currently <br></br>looking for new opportunities, my inbox is always open,<br></br> just drop me an email at <a
-              class="footer-link"
+              className="footer-link"
               href="mailto:vihrogonov@yahoo.com"
               title="Email"
               target="_blank"

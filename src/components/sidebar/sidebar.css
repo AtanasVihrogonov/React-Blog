@@ -8,23 +8,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-  .sidebar {
-    /* width: 100vw; */
-    /* margin-left: 20px; */
-    /* justify-content: center; */
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-}
-
-.sidebarContainer {
-  margin-right: 10px;
-}
+.sidebarContainer { margin-right: 10px; }
 
 .sidebarItem {
   display: flex;
@@ -91,4 +75,16 @@
   font-size: 16px;
   margin-left: 10px;
   cursor: pointer;
+}
+
+/* ========== Media Query ========== */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }

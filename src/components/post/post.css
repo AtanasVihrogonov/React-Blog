@@ -3,12 +3,6 @@
   margin: 0 20px;
 }
 
-@media screen and (max-width: 1160px) {
-  .post {
-    width: 80%;
-  }
-}
-
 .postImg {
   width: 100%;
   height: 280px;
@@ -58,4 +52,9 @@
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+}
+
+/* ========== Media Query ========== */
+@media screen and (max-width: 1160px) {
+  .post { width: 80%; }
 }

@@ -1,3 +1,4 @@
+import './app.css';
 import Home from './pages/home/Home';
 import TopBar from './components/topbar/TopBar';
 import Single from './pages/single/Single';
@@ -10,11 +11,13 @@ import Projects from './pages/projects/Projects';
 import Footer from './components/footer/Footer';
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Scroll from './components/SmothScroll';
 
 function App() {
   const user = false;
   return (
     <Router>
+      <Scroll />
       <TopBar />
       <Switch>
         <Route exact path='/'>
