@@ -28,17 +28,26 @@ const Footer = () => {
             <div className='footerLinkItems'>
               <p>Categories</p>
               <ul>
-                <li>Facebook</li>
-                <li>YouTube</li>
-                <li>Twitter</li>
+                <li>React</li>
+                <li>Node</li>
+                <li>JavaScript</li>
+                <li>Databese</li>
               </ul>
             </div>
             <div className='footerLinkItems'>
-              <p>Quick Links</p>
+              <p>Explore</p>
               <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Projects</li>
                 <li>Contact</li>
-                <li>Destinations</li>
-                <li>Sponsorships</li>
+              </ul>
+            </div>
+            <div className='footerLinkItems'>
+            <p>Legal</p>
+              <ul>
+                <li>Terms</li>
+                <li>Privacy</li>
               </ul>
             </div>
           </div>

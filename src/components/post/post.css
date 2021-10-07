@@ -1,6 +1,12 @@
 .post {
   width: 385px;
-  margin: 0 25px 40px 25px;
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 1160px) {
+  .post {
+    width: 80%;
+  }
 }
 
 .postImg {

@@ -22,14 +22,14 @@
 
 .headerTitleSm {
   position: absolute;
-  top: 17%;
+  top: 20%;
   font-size: 20px;
   color: #444;
 }
 
 .headerTitleLg {
   position: absolute;
-  top: 21%;
+  top: 25.5%;
   font-size: 100px;
   color: #ccc;
 }
@@ -42,4 +42,6 @@
   height: 600px;
   margin-top: 161px;
   object-fit: cover;
+  border-radius: 3px;
+
 }

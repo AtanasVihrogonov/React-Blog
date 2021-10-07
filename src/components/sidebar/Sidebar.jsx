@@ -9,14 +9,17 @@ import { FaSearch } from 'react-icons/fa';
 const Sidebar = () => {
   return (
     <div className='sidebar'>
-      <div className='sidebarItem'>
-        <span className='sidebarTitle'>About Me</span>
-        <img src={image} alt='' />
-        <p>
-          I am a junior developer specialised in frontend and backend
-          development for complex scalable web apps focus on writing clean,
-          elegant and efficient code.
-        </p>
+      <div className='sidebarContainer'>
+        <div className='sidebarItem'>
+          <span className='sidebarTitle'>About Me</span>
+          <img src={image} alt='' />
+          <p>
+            I am a junior developer specialised in frontend and backend
+            development for complex scalable web apps focus on writing clean,
+            elegant and efficient code.
+          </p>
+        </div>
+
         <div className='sidebarItem'>
           <span className='sidebarTitle'>Categories</span>
           <ul className='sidebarList'>
@@ -28,6 +31,7 @@ const Sidebar = () => {
             <li className='sidebarListItem'>Tech Stack</li>
           </ul>
         </div>
+
         <div className='sidebarItem'>
           <span className='sidebarTitle'>Follow Me</span>
           <div className='sidebarSocial'>
