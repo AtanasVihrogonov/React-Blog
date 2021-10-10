@@ -13,30 +13,27 @@ const TopBar = () => {
   return (
     <div className='top'>
       <div className='topContainer'>
-        <div className='topLeft'>
-          <FaGithub
+        <div className='topLogo'>
+          <span><a href='#'>A\V</a></span>
+        </div>
+        {/* <div className='topLeft'> */}
+          {/* <FaGithub
             className='topIcon'
             onClick={() =>
-              window.open(
-                'https://github.com/AtanasVihrogonov://www.facebook.com',
-                '_blank'
-              )
+              window.open('https://github.com/AtanasVihrogonov', '_blank')
             }
           />
           <FaTwitter
             className='topIcon'
             onClick={() =>
-              window.open(
-                'https://https://twitter.com/TheAV_001.google.com',
-                '_blank'
-              )
+              window.open('https://twitter.com/TheAV_001', '_blank')
             }
           />
           <FaLinkedinIn
             className='topIcon'
             onClick={() =>
               window.open(
-                'https://https://www.linkedin.com/in/atanasvihrogonov/.google.com',
+                'https://www.linkedin.com/in/atanasvihrogonov',
                 '_blank'
               )
             }
@@ -49,8 +46,8 @@ const TopBar = () => {
                 '_blank'
               )
             }
-          />
-        </div>
+          /> */}
+        {/* </div> */}
         <div className='topCenter'>
           <ul className='topList'>
             <li className='topListItem'>
@@ -82,12 +79,12 @@ const TopBar = () => {
           ) : (
             <ul className='topList'>
               <li className='topListItem'>
-                <Link className='link' to='/login'>
-                  Login
+                <Link className='link linkLg' to='/login'>
+                  Log in
                 </Link>
               </li>
               <li className='topListItem'>
-                <Link className='link' to='/register'>
+                <Link className='link linkReg' to='/register'>
                   Register
                 </Link>
               </li>

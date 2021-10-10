@@ -7,19 +7,19 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
     url('../../images/image-4.jpg');
   background-size: cover;
+  color: #fff;
 }
 
 .loginTitle {
   font-size: 50px;
-  color: #fff;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .loginForm {
+  width: 250px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  color: #fff;
 }
 
 .loginForm > label { margin: 10px 0; }
@@ -29,37 +29,39 @@
   background-color: #fff;
   border: none;
 }
-.loginInput:focus { outline-color: teal; }
+.loginInput:focus { outline-color: #444; }
 
 .loginButton {
-  margin-top: 20px;
-  padding: 8px;
   background-color: #be9656;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px;
   border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  letter-spacing: 1px;
 }
 
 .loginButton:hover {
   filter: brightness(90%);
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .loginRegisterButton {
-  position: absolute;
-  top: 80px;
-  right: 20px;
-  background-color: teal;
+  background-color: transparent;
   color: #fff;
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  padding: 10px 20px;
+}
+
+.loginButton,
+.loginRegisterButton {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  border-radius: 25px;
   cursor: pointer;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 30px;
-  letter-spacing: 1px;
 }
 
 .loginRegisterButton:hover {
-  filter: brightness(90%);
   transform: scale(1.05);
 }

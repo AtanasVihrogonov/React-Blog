@@ -1,5 +1,6 @@
 .top {
-  background: #f6f6f6;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0 0 0 / 15%);
   width: 100%;
   position: sticky;
   display: flex;
@@ -10,33 +11,59 @@
 }
 
 .topContainer {
-  font-family: 'Josefin Sans', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  height: 60px;
+  height: 70px;
   z-index: 1;
   margin: 0 auto;
+  padding: 15px;
+}
+
+.topLogo {
+  font-family: 'Carter One', cursive;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 20px;
+  color: #727272;
+}
+
+.topLogo:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-out;
+}
+
+.topLogo > span a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 25px;
 }
 
 .topLeft,
 .topRight {
-  flex: 3;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
 
-.topIcon {
+/* .topIcon {
   font-size: 20px;
   margin-right: 10px;
-  color: #444;
-}
+  color: #727272;
+} */
+/* .topIcon:hover {
+  transform: scale(1.15);
+  transition: 0.2s ease-out;
+} */
 
-.topCenter { flex: 6; }
+.topCenter {
+  flex: 6;
+  letter-spacing: 0.7px;
+}
 
 .topImg {
   width: 40px;
@@ -44,27 +71,63 @@
   border-radius: 50%;
   object-fit: cover;
 }
+.topCenter:hover {
+  content: '';
+}
 
 .topList {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   margin: 0;
   padding: 0;
   list-style: none;
-  letter-spacing: 1px;
 }
 
 .topListItem {
-  margin-right: 20px;
-  font-size: 18px;
+  margin-left: 20px;
+  font-size: 16px;
   font-weight: 300;
+  line-height: 20px;
   cursor: pointer;
+  color: #727272;
 }
-.topListItem > Link { text-decoration: none; }
+
+.topListItem > Link {
+  text-decoration: none;
+}
+
+.linkLg {
+  border: 1px solid #727272;
+}
+
+.linkReg {
+  border: 1px solid #b39656;
+  background-color: #b39656;
+  color: #f6f6f6;
+}
+
+.linkReg, .linkLg {
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+}
+
+.linkLg:hover  {
+  border: none;
+  background-color: #b39656;
+  color: #f6f6f6;
+}
+
+.linkReg:hover {
+  background-color: #f6f6f6;
+  border: 1px solid #727272;
+  color: #727272;
+}
 
 .topSearchIcon {
   font-style: 18px;
   color: #666;
   cursor: pointer;
-  margin-left: 15px;
+  margin: 15px;
 }

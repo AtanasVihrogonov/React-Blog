@@ -10,22 +10,26 @@ const Footer = () => {
       <div className='footerWrap'>
         <div className='footerLinksContainer'>
 
-          <div className='footerLinksWrapper'>
-            <div className='footerLinkItems'>
-              <p>About me</p>
-              <p>Looking for an experienced junior developer to build your <br></br>web app or ship your software product? I'm currently <br></br>looking for new opportunities, my inbox is always open,<br></br> just drop me an email at <a
-              className="footer-link"
-              href="mailto:vihrogonov@yahoo.com"
-              title="Email"
-              target="_blank"
-            >
-              vihrogonov@gmail.com</a
-            > or <br></br>use the channels below to get in touch.</p>
-            </div>
+          <div className='footerLinkInfo'>
+            <p>About me</p>
+            <p>
+              Looking for an experienced junior developer to build your
+              web app or ship your software product? I'm currently
+              looking for new opportunities, my inbox is always open, just drop me an email at {' '}
+              <a
+                className='footer-link'
+                href='mailto:vihrogonov@yahoo.com'
+                title='Email'
+                target='_blank'
+              >
+                vihrogonov@gmail.com
+              </a>{' '}
+              or use the channels below to get in touch.
+            </p>
           </div>
 
           <div className='footerLinksWrapper'>
-            <div className='footerLinkItems'>
+            <div className='footerLinkItems '>
               <p>Categories</p>
               <ul>
                 <li>React</li>
@@ -44,20 +48,21 @@ const Footer = () => {
               </ul>
             </div>
             <div className='footerLinkItems'>
-            <p>Legal</p>
+              <p>Legal</p>
               <ul>
                 <li>Terms</li>
                 <li>Privacy</li>
               </ul>
             </div>
           </div>
-
         </div>
 
         <div className='socialMedia'>
           <div className='socialMediaWrap'>
             <div className='socialLogo'>
-              <span><a href='#'>AV</a></span>
+              <span>
+                <a href='#'>A\V</a>
+              </span>
             </div>
             <div className='socialRights'>
               Copyright © 2021 All rights reserved.
