@@ -1,28 +1,35 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './footer.css';
 import { FaGithub } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaStackOverflow } from 'react-icons/fa';
+import { ThemeContext } from '../../context';
 
 const Footer = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className='footerContainer'>
       <div className='footerWrap'>
-        <div className='footerLinksContainer'>
-
+        <div
+          className='footerLinksContainer'
+          style={{
+            color: darkMode && '#ccc',
+          }}
+        >
           <div className='footerLinkInfo'>
             <p>About me</p>
             <p>
-              Looking for an experienced junior developer to build your
-              web app or ship your software product? I'm currently
-              looking for new opportunities, my inbox is always open, just drop me an email at {' '}
+              Looking for an experienced junior developer to build your web app
+              or ship your software product? I'm currently looking for new
+              opportunities, my inbox is always open, just drop me an email at{' '}
               <a
                 className='footer-link'
                 href='mailto:vihrogonov@yahoo.com'
                 title='Email'
                 target='_blank'
-                rel="noopener noreferrer"
+                rel='noopener noreferrer'
               >
                 vihrogonov@gmail.com
               </a>{' '}
@@ -60,8 +67,18 @@ const Footer = () => {
         </div>
 
         <div className='socialMedia'>
-          <div className='socialMediaWrap'>
-            <div className='socialLogo'>
+          <div
+            className='socialMediaWrap'
+            style={{
+              color: darkMode && '#ccc',
+            }}
+          >
+            <div
+              className='socialLogo'
+              style={{
+                color: darkMode && '#ccc',
+              }}
+            >
               <span>
                 <a href='https://avihrogonov.co.uk/'>A\V</a>
               </span>

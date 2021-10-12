@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { useState, useContext } from 'react';
 import './topbar.css';
 import { FaSearch } from 'react-icons/fa';
 import { RiMenu2Fill } from 'react-icons/ri';
 import image from '../../images/register.jpg';
 import { Link as LinkR } from 'react-router-dom';
-import { Link as LinkS } from 'react-scroll';
-import { MenuItems } from './MenuItems';
 import Toggle from '../toggle/Toggle';
+import { ThemeContext } from '../../context';
 
 const TopBar = () => {
   const user = false;
+
   return (
     <div className='top'>
       <div className='topContainer'>
@@ -48,7 +48,8 @@ const TopBar = () => {
         </div>
         <div className='topRight'>
           {user ? (
-            <img className='topImg' src={image} alt='' />
+            <img className='topImg' src={image} alt='' />,
+            <Toggle className='toggle' />
           ) : (
             <ul className='topList'>
               <FaSearch className='topSearchIcon' />
