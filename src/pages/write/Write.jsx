@@ -1,6 +1,7 @@
+import React from 'react';
 import './write.css';
 import { AiFillFolderAdd } from 'react-icons/ai';
-import image from '../../images/image-2.jpg'
+import image from '../../images/image-2.jpg';
 
 const Write = () => {
   return (

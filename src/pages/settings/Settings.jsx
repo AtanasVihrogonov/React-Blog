@@ -1,6 +1,7 @@
+import React from 'react';
 import './settings.css';
 import Sidebar from '../../components/sidebar/Sidebar';
-import image from '../../images/image-1-removebg.jpg';
+import image from '../../images/image-1.jpeg';
 import { AiOutlineUserAdd } from 'react-icons/ai';
 
 const Settings = () => {

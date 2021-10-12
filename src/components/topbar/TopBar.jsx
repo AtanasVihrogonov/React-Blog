@@ -1,74 +1,47 @@
-import './topbar.css';
-import { FaGithub } from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
-import { FaLinkedinIn } from 'react-icons/fa';
-import { FaStackOverflow } from 'react-icons/fa';
-import { FaSearch } from 'react-icons/fa';
-import image from '../../images/image-1-removebg.jpg';
-import { Link } from 'react-router-dom';
 import React from 'react';
+import './topbar.css';
+import { FaSearch } from 'react-icons/fa';
+import { RiMenu2Fill } from 'react-icons/ri';
+import image from '../../images/register.jpg';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
+import { MenuItems } from './MenuItems';
+import Toggle from '../toggle/Toggle';
 
 const TopBar = () => {
   const user = false;
   return (
     <div className='top'>
       <div className='topContainer'>
-        <div className='topLogo'>
-          <span><a href='#'>A\V</a></span>
+        <div className='mobileMenuIcon'>
+          <RiMenu2Fill className='mobileIcon' />
         </div>
-        {/* <div className='topLeft'> */}
-          {/* <FaGithub
-            className='topIcon'
-            onClick={() =>
-              window.open('https://github.com/AtanasVihrogonov', '_blank')
-            }
-          />
-          <FaTwitter
-            className='topIcon'
-            onClick={() =>
-              window.open('https://twitter.com/TheAV_001', '_blank')
-            }
-          />
-          <FaLinkedinIn
-            className='topIcon'
-            onClick={() =>
-              window.open(
-                'https://www.linkedin.com/in/atanasvihrogonov',
-                '_blank'
-              )
-            }
-          />
-          <FaStackOverflow
-            className='topIcon'
-            onClick={() =>
-              window.open(
-                'https://stackoverflow.com/users/8870964/atanas-vihrogonov',
-                '_blank'
-              )
-            }
-          /> */}
-        {/* </div> */}
+        <div className='topLogo'>
+          <span>
+            <a href='https://avihrogonov.co.uk'>A\V</a>
+          </span>
+        </div>
         <div className='topCenter'>
           <ul className='topList'>
             <li className='topListItem'>
-              <Link className='link' to='/'>
+              <LinkR className='link' to='/'>
                 Home
-              </Link>
+              </LinkR>
             </li>
             <li className='topListItem'>
-              <Link className='link' to='/about'>
+              <LinkR className='link' to='/about'>
                 About
-              </Link>
+              </LinkR>
             </li>
             <li className='topListItem'>
-              <Link className='link' to='/projects'>
+              <LinkR className='link' to='/projects'>
                 Projects
-              </Link>
+              </LinkR>
             </li>
             <li className='topListItem'>
-              <Link className='link' to='/write'>
+              <LinkR className='link' to='/write'>
                 Write
-              </Link>
+              </LinkR>
             </li>
             <li className='topListItem'>{user && 'Logout'}</li>
           </ul>
@@ -78,19 +51,20 @@ const TopBar = () => {
             <img className='topImg' src={image} alt='' />
           ) : (
             <ul className='topList'>
+              <FaSearch className='topSearchIcon' />
               <li className='topListItem'>
-                <Link className='link linkLg' to='/login'>
-                  Log in
-                </Link>
-              </li>
-              <li className='topListItem'>
-                <Link className='link linkReg' to='/register'>
+                <LinkR className='link linkReg' to='/register'>
                   Register
-                </Link>
+                </LinkR>
+              </li>
+              <li className='topListRegister'>
+                <LinkR className='link linkLg' to='/login'>
+                  Log in
+                </LinkR>
               </li>
             </ul>
           )}
-          <FaSearch className='topSearchIcon' />
+          <Toggle className='toggle' />
         </div>
       </div>
     </div>

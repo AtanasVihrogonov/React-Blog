@@ -1,3 +1,4 @@
+import React from 'react';
 import sidebar from './sidebar.css';
 import image from '../../images/image-1.jpeg';
 import { FaGithub } from 'react-icons/fa';
@@ -36,7 +37,7 @@ const Sidebar = () => {
           <span className='sidebarTitle'>Follow Me</span>
           <div className='sidebarSocial'>
             <FaGithub
-              className='sidebarIcon'
+              className='sidebarIcon sidebarGithub'
               onClick={() =>
                 window.open(
                   'https://github.com/AtanasVihrogonov://www.facebook.com',
@@ -45,7 +46,7 @@ const Sidebar = () => {
               }
             />
             <FaTwitter
-              className='sidebarIcon'
+              className='sidebarIcon sidebarTwitter'
               onClick={() =>
                 window.open(
                   'https://https://twitter.com/TheAV_001.google.com',
@@ -54,7 +55,7 @@ const Sidebar = () => {
               }
             />
             <FaLinkedinIn
-              className='sidebarIcon'
+              className='sidebarIcon sidebarLinkedin'
               onClick={() =>
                 window.open(
                   'https://https://www.linkedin.com/in/atanasvihrogonov/.google.com',
@@ -63,7 +64,7 @@ const Sidebar = () => {
               }
             />
             <FaStackOverflow
-              className='sidebarIcon'
+              className='sidebarIcon sidebarStackOverflow'
               onClick={() =>
                 window.open(
                   'https://stackoverflow.com/users/8870964/atanas-vihrogonov',

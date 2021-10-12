@@ -1,3 +1,4 @@
+import React from 'react';
 import './post.css';
 import image from '../../images/image-2.jpg';
 

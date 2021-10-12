@@ -16,10 +16,14 @@
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  height: 70px;
+  height: 60px;
   z-index: 1;
   margin: 0 auto;
   padding: 15px;
+}
+
+.mobileMenuIcon {
+  display: none;
 }
 
 .topLogo {
@@ -29,11 +33,13 @@
   font-weight: bold;
   margin-left: 20px;
   color: #727272;
+  color: #444;
 }
 
 .topLogo:hover {
   transform: scale(1.05);
   transition: 0.2s ease-out;
+  color: #b39656;
 }
 
 .topLogo > span a {
@@ -50,16 +56,6 @@
   cursor: pointer;
 }
 
-/* .topIcon {
-  font-size: 20px;
-  margin-right: 10px;
-  color: #727272;
-} */
-/* .topIcon:hover {
-  transform: scale(1.15);
-  transition: 0.2s ease-out;
-} */
-
 .topCenter {
   flex: 6;
   letter-spacing: 0.7px;
@@ -71,25 +67,40 @@
   border-radius: 50%;
   object-fit: cover;
 }
-.topCenter:hover {
-  content: '';
+
+.link:hover {
+  color: #b39656;
 }
 
 .topList {
   display: flex;
-  justify-content: start;
   margin: 0;
   padding: 0;
   list-style: none;
+  height: 36px;
+  margin-right: 40px;
 }
 
 .topListItem {
+  transition: all 3s ease-in-out;
   margin-left: 20px;
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
   line-height: 20px;
   cursor: pointer;
-  color: #727272;
+  color: #444;
+  height: 36px;
+}
+
+.topListRegister {
+  margin-left: 15px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .topListItem > Link {
@@ -97,37 +108,60 @@
 }
 
 .linkLg {
-  border: 1px solid #727272;
+  border: 1px solid #444;
 }
 
 .linkReg {
   border: 1px solid #b39656;
   background-color: #b39656;
-  color: #f6f6f6;
+  color: #000;
 }
 
 .linkReg, .linkLg {
   padding: 10px 24px;
   border-radius: 50px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .linkLg:hover  {
-  border: none;
+  border: 1px solid transparent;
   background-color: #b39656;
   color: #f6f6f6;
 }
 
 .linkReg:hover {
-  background-color: #f6f6f6;
-  border: 1px solid #727272;
-  color: #727272;
+  border: 1px solid #b39656;
+  color: #f6f6f6;
 }
 
 .topSearchIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   font-style: 18px;
-  color: #666;
+  color: #444;
   cursor: pointer;
-  margin: 15px;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+  .mobileMenuIcon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    transform: translate(-100%, 40%);
+    font-size: 28px;
+    cursor: pointer;
+  }
+  .topLogo,
+  .topListItem {
+    display: none;
+  }
 }

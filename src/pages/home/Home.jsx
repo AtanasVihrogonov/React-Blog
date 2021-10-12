@@ -1,3 +1,4 @@
+import React from 'react';
 import home from './home.css';
 import Header from '../../components/header/Header';
 import Posts from '../../components/posts/Posts';

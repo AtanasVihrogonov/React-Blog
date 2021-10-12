@@ -1,3 +1,4 @@
+import React from 'react';
 import './singlePost.css';
 import image from '../../images/image-2.jpg';
 import { FaRegEdit } from 'react-icons/fa';

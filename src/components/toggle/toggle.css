@@ -1,0 +1,42 @@
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.toggleContainer {
+  max-width: 1200px;
+  width: 50px;
+  height: 25px;
+  border-radius: 20px;
+  border: 1px solid #444;
+  background-color: #f6f6f6;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 10px;
+}
+
+.toggle-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.sun {
+  color: #b39656;
+}
+
+.toggle-button {
+  width: 23px;
+  height: 23px;
+  border: none;
+  border-radius: 50%;
+  background-color: #727272;
+  position: absolute;
+  cursor: pointer;
+  /* left: 0; */
+  right: 0;
+}

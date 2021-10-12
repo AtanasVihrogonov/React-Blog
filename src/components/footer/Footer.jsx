@@ -1,3 +1,4 @@
+import React from 'react';
 import './footer.css';
 import { FaGithub } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
@@ -21,6 +22,7 @@ const Footer = () => {
                 href='mailto:vihrogonov@yahoo.com'
                 title='Email'
                 target='_blank'
+                rel="noopener noreferrer"
               >
                 vihrogonov@gmail.com
               </a>{' '}
@@ -61,7 +63,7 @@ const Footer = () => {
           <div className='socialMediaWrap'>
             <div className='socialLogo'>
               <span>
-                <a href='#'>A\V</a>
+                <a href='https://avihrogonov.co.uk/'>A\V</a>
               </span>
             </div>
             <div className='socialRights'>
@@ -69,7 +71,7 @@ const Footer = () => {
             </div>
             <div className='socialIcons'>
               <FaGithub
-                className='socialIcon'
+                className='socialIcon socialGithub'
                 onClick={() =>
                   window.open(
                     'https://github.com/AtanasVihrogonov://www.facebook.com',
@@ -78,7 +80,7 @@ const Footer = () => {
                 }
               />
               <FaTwitter
-                className='socialIcon'
+                className='socialIcon socialTwitter'
                 onClick={() =>
                   window.open(
                     'https://https://twitter.com/TheAV_001.google.com',
@@ -87,7 +89,7 @@ const Footer = () => {
                 }
               />
               <FaLinkedinIn
-                className='socialIcon'
+                className='socialIcon socialLinkedin'
                 onClick={() =>
                   window.open(
                     'https://https://www.linkedin.com/in/atanasvihrogonov/.google.com',
@@ -96,7 +98,7 @@ const Footer = () => {
                 }
               />
               <FaStackOverflow
-                className='socialIcon'
+                className='socialIcon socialStackOverflow'
                 onClick={() =>
                   window.open(
                     'https://stackoverflow.com/users/8870964/atanas-vihrogonov',

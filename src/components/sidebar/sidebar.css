@@ -7,7 +7,9 @@
   align-items: center;
 }
 
-.sidebarContainer { margin-right: 10px; }
+.sidebarContainer {
+  border-radius: 10px;
+}
 
 .sidebarItem {
   display: flex;
@@ -39,6 +41,9 @@
   width: 70%;
   border-radius: 50%;
   border: 1px solid #a7a4a4;
+  box-shadow:
+  rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+  rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 .sidebarItem > p {
@@ -74,9 +79,29 @@
 }
 
 .sidebarIcon {
-  font-size: 18px;
+  font-size: 20px;
   margin-left: 10px;
   cursor: pointer;
+  color: #444;
+}
+
+.sidebarIcon:hover {
+  transform: scale(1.15);
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+
+.sidebarGithub:hover {
+  color: #000;
+}
+.sidebarTwitter:hover {
+  color: #32ccfe;
+}
+.sidebarLinkedin:hover {
+  color: #0085ae;
+}
+.sidebarStackOverflow:hover {
+  color: #ff7300;
 }
 
 /* ========== Media Query ========== */

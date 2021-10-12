@@ -1,3 +1,4 @@
+import React from 'react';
 import Home from './pages/home/Home';
 import TopBar from './components/topbar/TopBar';
 import Single from './pages/single/Single';
@@ -9,7 +10,7 @@ import About from './pages/about/About';
 import Projects from './pages/projects/Projects';
 import Footer from './components/footer/Footer';
 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   const user = false;
