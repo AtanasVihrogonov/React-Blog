@@ -1,8 +1,8 @@
 import React, { useState, useContext } from 'react';
 import './topbar.css';
 import { FaSearch } from 'react-icons/fa';
-import { RiMenu2Fill } from 'react-icons/ri';
-import image from '../../images/register.jpg';
+import { FaAlignLeft } from 'react-icons/fa';
+import image from '../../images/image-1.jpeg';
 import { Link as LinkR } from 'react-router-dom';
 import Toggle from '../toggle/Toggle';
 import { ThemeContext } from '../../context';
@@ -13,8 +13,8 @@ const TopBar = () => {
   return (
     <div className='top'>
       <div className='topContainer'>
-        <div className='mobileMenuIcon'>
-          <RiMenu2Fill className='mobileIcon' />
+        <div className='menu'>
+          <FaAlignLeft className='menu-icon' />
         </div>
         <div className='topLogo'>
           <span>
@@ -48,8 +48,7 @@ const TopBar = () => {
         </div>
         <div className='topRight'>
           {user ? (
-            <img className='topImg' src={image} alt='' />,
-            <Toggle className='toggle' />
+            ((<img className='topImg' src={image} alt='' />))
           ) : (
             <ul className='topList'>
               <FaSearch className='topSearchIcon' />

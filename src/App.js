@@ -22,11 +22,11 @@ function App() {
           <Home />
           <Footer />
         </Route>
-        <Route exact path='/about'>
+        <Route path='/about'>
           <About />
           <Footer />
         </Route>
-        <Route exact path='/projects'>
+        <Route path='/projects'>
           <Projects />
           <Footer />
         </Route>

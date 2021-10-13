@@ -22,7 +22,7 @@
   padding: 15px;
 }
 
-.mobileMenuIcon {
+.menu {
   display: none;
 }
 
@@ -64,11 +64,13 @@
 .topImg {
   width: 40px;
   height: 40px;
+  border: 1px solid #444;
   border-radius: 50%;
   object-fit: cover;
+  margin: 10px;
 }
 
-.link:hover {
+.topCenter .topList li a:hover {
   color: #b39656;
 }
 
@@ -90,6 +92,8 @@
   cursor: pointer;
   color: #444;
   height: 36px;
+  display: flex;
+  align-items: center;
 }
 
 .topListRegister {
@@ -158,17 +162,36 @@
 }
 
 @media screen and (max-width: 768px) {
-  .mobileMenuIcon {
+  .menu {
     display: block;
     position: absolute;
     top: 0;
     left: 40px;
-    transform: translate(-100%, 40%);
-    font-size: 28px;
+    transform: translate(-100%, 80%);
+    background:  transparent;
     cursor: pointer;
+    border: none;
+    align-items: center;
+    justify-content: center;
   }
+
+  .menu-icon {
+    font-size: 20px;
+  }
+  
   .topLogo,
   .topListItem {
     display: none;
   }
+
+  /* .topCenter, .topLogo, .topListItem {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    color: #f6f6f6;
+    padding: 20px;
+    right: 0;
+    top: 60px;
+  } */
 }
