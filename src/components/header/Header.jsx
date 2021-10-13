@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import './header.css';
 // import image from '../images/image-4.jpg';
-import Video from '../../videos/mobile.mp4';
+import Video from '../../videos/video-1.mp4';
 import { ThemeContext } from '../../context';
 
 const Header = () => {
